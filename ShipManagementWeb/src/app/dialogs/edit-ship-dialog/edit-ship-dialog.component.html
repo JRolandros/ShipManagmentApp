@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>Modification du navire</h2>
+<mat-dialog-content >
+ <div >
+  <form [formGroup]="shipForm" fxLayout="column"  fxLayoutGap="16px">
+    <mat-form-field>
+      <input matInput placeholder="ID" formControlName="id" readonly>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Numéro" min="1" formControlName="shipNumber">
+      <mat-error *ngIf="shipForm.controls['shipNumber'].invalid && (shipForm.controls['shipNumber'].dirty || shipForm.controls['shipNumber'].touched)">
+        Le numéro est obligatoire.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nom du Navire" formControlName="shipName">
+      <mat-error *ngIf="shipForm.controls['shipName'].invalid && (shipForm.controls['shipName'].dirty || shipForm.controls['shipName'].touched)">
+        Le nom du navire est obligatoire.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Année Construction" type="number" step="1" min="1900" formControlName="createdYear">
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Longueur navire" type="number" min="1" formControlName="shipLength">
+      <mat-error *ngIf="shipForm.controls['shipLength'].invalid && (shipForm.controls['shipLength'].dirty || shipForm.controls['shipLength'].touched)">
+        La longueur est obligatoire.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Largeur navire" type="number" min="1" formControlName="shipWidth">
+      <mat-error *ngIf="shipForm.controls['shipWidth'].invalid && (shipForm.controls['shipWidth'].dirty || shipForm.controls['shipWidth'].touched)">
+        La largeur est obligatoire.
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Tonnage brute" type="number" min="1" step="1" formControlName="weightGross">
+    </mat-form-field>
+    <mat-form-field >
+      <input matInput placeholder="Tonnage net" type="number" min="1" step="1" formControlName="weightNet">
+    </mat-form-field>
+    <mat-form-field >
+      <!--This one should be a dropdownList to pick the user. Or should be filled automatically by the connected user (the best is the last)-->
+      <input matInput placeholder="Créé par"  formControlName="createdById">
+      <mat-error *ngIf="shipForm.controls['createdById'].invalid && (shipForm.controls['createdById'].dirty || shipForm.controls['createdById'].touched)">
+        Le créateur du navire est obligatoire.
+      </mat-error>
+    </mat-form-field>
+  </form>
+ </div>
+</mat-dialog-content>
+<mat-dialog-actions >
+  <button mat-button [mat-dialog-close]="null">Annuler</button>
+  <button mat-button color="primary" [mat-dialog-close]="shipForm.valid ? shipForm.value : null" cdkFocusInitial>Modifier</button>
+</mat-dialog-actions>

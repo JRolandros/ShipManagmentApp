@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Suppression du navire</h2>
+<mat-dialog-content>
+  <div>
+    Are you sure you want to delete ship '{{ data.ship.name }}' (ID: {{ data.ship.shipId }})?
+  </div>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="false">Annuler</button>
+  <button mat-button color="warn" [mat-dialog-close]="true" cdkFocusInitial>Confirmer</button>
+</mat-dialog-actions>

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipManagment.Api", "ShipManagment.Api\ShipManagment.Api.csproj", "{45310804-A80D-4F48-8391-70541EC4D016}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipManagement.Application", "ShipManagement.Application\ShipManagement.Application.csproj", "{E5B0A453-7ABC-4B61-94F9-BAB340DC695F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipManagement.Domain", "ShipManagement.Domain\ShipManagement.Domain.csproj", "{7A2CC1D6-2C99-4C52-91F5-32A109807C35}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShipManagement.Infrastructure", "ShipManagement.Infrastructure\ShipManagement.Infrastructure.csproj", "{DF2765C1-596D-4713-8FBE-9B29527F8665}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ShipManagementWeb", "ShipManagementWeb\", "{553B617B-6CEE-4F42-AB6F-B52F8EC70EF2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54754"
+		Debug.AspNetCompiler.PhysicalPath = "ShipManagementWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54754\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54754"
+		Release.AspNetCompiler.PhysicalPath = "ShipManagementWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54754\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54754"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45310804-A80D-4F48-8391-70541EC4D016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45310804-A80D-4F48-8391-70541EC4D016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45310804-A80D-4F48-8391-70541EC4D016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45310804-A80D-4F48-8391-70541EC4D016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B0A453-7ABC-4B61-94F9-BAB340DC695F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B0A453-7ABC-4B61-94F9-BAB340DC695F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B0A453-7ABC-4B61-94F9-BAB340DC695F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B0A453-7ABC-4B61-94F9-BAB340DC695F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2CC1D6-2C99-4C52-91F5-32A109807C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2CC1D6-2C99-4C52-91F5-32A109807C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2CC1D6-2C99-4C52-91F5-32A109807C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2CC1D6-2C99-4C52-91F5-32A109807C35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF2765C1-596D-4713-8FBE-9B29527F8665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2765C1-596D-4713-8FBE-9B29527F8665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2765C1-596D-4713-8FBE-9B29527F8665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF2765C1-596D-4713-8FBE-9B29527F8665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553B617B-6CEE-4F42-AB6F-B52F8EC70EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553B617B-6CEE-4F42-AB6F-B52F8EC70EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553B617B-6CEE-4F42-AB6F-B52F8EC70EF2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{553B617B-6CEE-4F42-AB6F-B52F8EC70EF2}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87A0F6F3-6BA6-4276-A07F-CFD34DF47388}
+	EndGlobalSection
+EndGlobal

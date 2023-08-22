@@ -1,0 +1,31 @@
+/* Base styles for the table */
+.mat-table {
+  width: 100%;
+}
+
+/* Apply responsive styles using media queries */
+@media (max-width: 600px) {
+  /* Styles for small screens */
+  .mat-header-row,
+  .mat-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mat-header-row .mat-header-cell,
+  .mat-row .mat-cell {
+    flex-basis: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .mat-header-row .mat-header-cell {
+    font-weight: bold;
+  }
+
+  .mat-row .mat-cell:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
