@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ShipManagement.Application/bin/Debug/net7.0
+/ShipManagement.Domain/bin/Debug/net7.0
+/ShipManagement.Domain/obj/Debug/net7.0
+/ShipManagement.Domain/obj
+/ShipManagement.Infrastructure/bin/Debug/net7.0
+/ShipManagement.Infrastructure/obj/Debug/net7.0
+/ShipManagement.Application/obj
+/ShipManagement.Infrastructure/obj
+/ShipManagment.Api/bin/Debug/net7.0
+/ShipManagment.Api/obj
