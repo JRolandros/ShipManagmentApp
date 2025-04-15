@@ -13,35 +13,28 @@ import { ShipListComponent } from './ship-list/ship-list.component';
 import { AddShipDialogComponent } from './dialogs/add-ship-dialog/add-ship-dialog.component';
 import { EditShipDialogComponent } from './dialogs/edit-ship-dialog/edit-ship-dialog.component';
 import { DeleteShipDialogComponent } from './dialogs/delete-ship-dialog/delete-ship-dialog.component';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { HttpRequestInterceptor } from './helpers/http-request.interceptor';
 import { JwtModule } from '@auth0/angular-jwt';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    LoginComponent,
-    ShipListComponent,
-    AddShipDialogComponent,
-    EditShipDialogComponent,
-    DeleteShipDialogComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    FlexLayoutModule,
-    HttpClientModule,
-    JwtModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    ShipMaterialModule
-  ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true },
-  ],
-
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        LoginComponent,
+        ShipListComponent,
+        AddShipDialogComponent,
+        EditShipDialogComponent,
+        DeleteShipDialogComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        FlexLayoutModule,
+        JwtModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        ShipMaterialModule], providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true },
+        provideHttpClient(withInterceptorsFromDi()),
+    ] })
 export class AppModule { }
