@@ -12,7 +12,7 @@ namespace ShipManagment.Api.Controllers
 {
     [Route("api/ships")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ShipsController : ControllerBase
     {
         private readonly ILogger<ShipsController> _logger;
